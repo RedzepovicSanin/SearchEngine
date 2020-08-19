@@ -1,0 +1,15 @@
+current directory: /Users/saninredzepovic/Desktop/search-engine-app/vendor/cache/ruby/2.7.0/gems/bootsnap-1.4.7/ext/bootsnap
+/Users/saninredzepovic/.rvm/rubies/ruby-2.7.1/bin/ruby -I /Users/saninredzepovic/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0 -r ./siteconf20200810-96142-8hodye.rb extconf.rb
+creating Makefile
+
+current directory: /Users/saninredzepovic/Desktop/search-engine-app/vendor/cache/ruby/2.7.0/gems/bootsnap-1.4.7/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/saninredzepovic/Desktop/search-engine-app/vendor/cache/ruby/2.7.0/gems/bootsnap-1.4.7/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/saninredzepovic/Desktop/search-engine-app/vendor/cache/ruby/2.7.0/gems/bootsnap-1.4.7/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20200810-96142-11q92n4/bootsnap
