@@ -5,7 +5,7 @@
     <div class="title">Search Engine Rails</div>
 
     <%= form_tag( '/articles' , method: :get) do %>
-      <%= text_field_tag(:search, params[:search], class: 'search', placeholder: 'Try searching for an article') %>
+      <%= text_field_tag(:search, params[:search], remote: false, class: 'search', placeholder: 'Try searching for an article') %>
     <% end %>
 
     <div class="articles">

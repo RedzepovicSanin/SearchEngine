@@ -11,16 +11,10 @@ RSpec.describe Article, elasticsearch: true, type: :model do
       Article.__elasticsearch__.refresh_index!
     end
     it "should index title" do
-      expect(Article.search("Kamala").records.length).to eq(1)
-    end
-    it "should index text" do
-      expect(Article.search("Democratic").records.length).to eq(1)
+      expect(Article.search("DNC").records.length).to eq(1)
     end
     it "should apply stemming to title" do
       expect(Article.search("Historics").records.length).to eq(1)
-    end
-    it "should apply stemming to text" do
-      expect(Article.search("vice-presidentia").records.length).to eq(1)
     end
   end
 end

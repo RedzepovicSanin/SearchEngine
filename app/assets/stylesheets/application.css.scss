@@ -55,9 +55,6 @@ main.home {
     border-radius: 2px;
     box-shadow: $box-shadow;
     margin-bottom: 30px;
-    font: 16px arial,sans-serif;
-    background:  url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/59615/microphone.png) 540px center;
-    background-repeat: no-repeat;
     background-size: 24px 24px;
     padding: 10px;
     &:hover, &:focus {
@@ -66,12 +63,18 @@ main.home {
     }
   }
   .articles {
-    height: 250px;
-    max-height: 250px;
+    height: 200px;
+    max-height: 200px;
     overflow-y: auto;
     .article {
       padding: 10px;
-      border: 1px solid red;
+      border-radius: 2px;
+      box-shadow: $box-shadow;
+    }
+    .article:hover, .article:focus {
+      cursor: pointer;
+      outline: none;
+      box-shadow: $box-shadow-hvr;
     }
   }
 }
