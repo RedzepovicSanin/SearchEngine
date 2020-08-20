@@ -1,0 +1,21 @@
+<div class="fluid-container">
+  
+  <main class="home">
+
+    <div class="title">Search Engine Rails</div>
+
+    <%= form_tag( '/articles' , method: :get) do %>
+      <%= text_field_tag(:search, params[:search], class: 'search', placeholder: 'Try searching for an article') %>
+    <% end %>
+
+    <div class="articles">
+      <% @articles.each do |article| %>
+        <div class="article">
+          <h2><%= article.title %></h2>
+          <h6><%= article.text %></h6>
+        </div>
+      <% end %>
+    </div>
+  </main>
+  
+</div>
